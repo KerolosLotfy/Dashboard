@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasborad</title>
+    <!-- framework style -->
+    <link rel="stylesheet" href="./css/frameWork.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+        <aside class="p-10">
+            <h2 class="logo p-relative"><a href="">kerolos</a></h2>
+            <!-- nav -->
+            <ul class="fx-cl">
+                <li class=" active" data-display="dashboard">
+                    <a class=" p-10" href="./index.html">
+                        <i class="fa-regular fa-chart-bar"></i>
+                        <span class="txt-captial">Dasborad</span>
+                    </a>
+                </li>
+                <li data-display="settings">
+                    <a class=" p-10" href="./settings.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="txt-captial">settings</span>
+                    </a>
+                </li>
+                <li data-display="profile">
+                    <a class=" p-10" href="./profile.html">
+                        <i class="fa-regular fa-user"></i>
+                        <span class="txt-captial">profile</span>
+                    </a>
+                </li>
+                <li data-display="projects">
+                    <a class=" p-10" href="./projects.html">
+                        <i class="fa-solid fa-share-nodes"></i>
+                        <span class="txt-captial">projects</span>
+                    </a>
+                </li>
+                <li data-display="courses">
+                    <a class=" p-10" href="./courses.html">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span class="txt-captial">courses</span>
+                    </a>
+                </li>
+                <li data-display="friends">
+                    <a class=" p-10" href="./friends.html">
+                        <i class="fa-regular fa-circle-user"></i>
+                        <span class="txt-captial">friends</span>
+                    </a>
+                </li>
+                <li data-display="files">
+                    <a class=" p-10" href="./files.html">
+                        <i class="fa-regular fa-file"></i>
+                        <span class="txt-captial">files</span>
+                    </a>
+                </li>
+                <li data-display="plans">
+                    <a class=" p-10" href="./plans.html">
+                        <i class="fa-regular fa-credit-card"></i>
+                        <span class="txt-captial">plans</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- article -->
+        <article>
+            <!-- header -->
+            <header class="fx-s-bet">
+                <div class="search fx-c p-relative">
+                    <label for="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                    <input class="p-10 b-r-10" type="search" name="search" id="search" placeholder="Type A Keyword">
+                </div>
+
+                <div class="user fx-c">
+                    <div class="theme fx-c p-relative">
+                        <i class="fa-solid fa-moon moon"></i>
+                        <i class="fa-solid fa-sun sun"></i>
+                    </div>
+                    <i class="fa-regular fa-bell p-relative"></i>
+                    <img src="./images/man.png" alt="">
+                </div>
+            </header>
+
+            <!-- dashborad section -->
+            <section id="dashboard" class="w-full p-20 active ">
+                <h1 class="sec-title">dashborad</h1>
+                <div class="container g-c-3 gap-10">
+                    <!-- welcome -->
+                    <div class="box fx-cl" id="welcome">
+                        <div class="welcome fx-s-bet p-20 p-relative">
+                            <div class="text">
+                                <h3>Welcome</h3>
+                                <p class="desc">Elzero</p>
+                            </div>
+                            <div class="img">
+                                <img src="./images/welcome.png" alt="">
+                            </div>
+                        </div>
+                        <div class="info fx-c  p-10 fx-wrap">
+                            <div class="fx-cl gap-10">
+                                <p>kerolos lotfy</p>
+                                <p class="desc">Developer</p>
+                            </div>
+                            <div class="fx-cl gap-10">
+                                <p>80</p>
+                                <p class="desc">Projects</p>
+                            </div>
+                            <div class="fx-cl gap-10">
+                                <p>$8500 </p>
+                                <p class="desc">Earned</p>
+                            </div>
+                        </div>
+                        <a href="./profile.html" class="btn bg-dark-blue  mt-10 mb-10  ">Profile</a>
+                    </div>
+
+                    <!-- quick-draft -->
+                    <div class="box fx-cl p-20" id="draft">
+                        <h2 class="title">Quick draft</h2>
+                        <p class="desc">write a draft or your ideas</p>
+                        <form action="" class="fx-cl">
+                            <input type="text" name="title" placeholder="Title" class="p-10">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Your Thought"
+                                class="p-10"></textarea>
+                            <input type="submit" value="Save" class="btn  bg-dark-blue mt-10 ">
+                        </form>
+                    </div>
+
+                    <!-- yearly targets -->
+                    <div class="box fx-cl p-20" id="targets">
+                        <h2 class="title">yearly targets</h2>
+                        <p class="desc">targets of the year</p>
+                        <div class="cont fx-cl gap-20">
+                            <div class="target gap-10" id="money">
+                                <div class="icon fx-c bg-light-blue dark-blue"><i class="fa-solid fa-dollar-sign"></i>
+                                </div>
+                                <div class="txt fx-cl">
+                                    <p class="desc">Money</p>
+                                    <div class="  txt">$20.000</div>
+                                    <div class="bar bg-light-blue p-relative">
+                                        <span class="bg-dark-blue"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="target gap-10" id="projects">
+                                <div class="icon fx-c bg-light-orange dark-orange"><i class="fa-solid fa-code"></i>
+                                </div>
+                                <div class="txt fx-cl">
+                                    <p class="desc">projects</p>
+                                    <div class="  txt">24</div>
+                                    <div class="bar bg-light-orange p-relative">
+                                        <span class="bg-dark-orange"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="target gap-10" id="team">
+                                <div class="icon fx-c bg-light-green dark-green"><i class="fa-solid fa-user"></i></div>
+                                <div class="txt fx-cl">
+                                    <p class="desc">team</p>
+                                    <div class="  txt">12</div>
+                                    <div class="bar bg-light-green p-relative">
+                                        <span class="bg-dark-green"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- tickets statistics -->
+                    <div class="box fx-cl p-20" id="statistics">
+                        <h2 class="title">tickets statistics</h2>
+                        <p class="desc">everything about support tickets</p>
+                        <div>
+                            <div class="stat fx-cl b-r-10">
+                                <i class="fa-regular fa-rectangle-list dark-orange"></i>
+                                <p>2500</p>
+                                <div class="desc">total</div>
+                            </div>
+                            <div class="stat fx-cl b-r-10">
+                                <i class="fa-solid fa-spinner  dark-blue"></i>
+                                <p>500</p>
+                                <div class="desc">pending</div>
+                            </div>
+                            <div class="stat fx-cl b-r-10">
+                                <i class="fa-regular fa-circle-check  dark-green"></i>
+                                <p>1900</p>
+                                <div class="desc">closed</div>
+                            </div>
+                            <div class="stat fx-cl">
+                                <i class="fa-regular fa-rectangle-xmark  dark-red"></i>
+                                <p>100</p>
+                                <div class="desc">deleted</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News -->
+                    <div class="box fx-cl p-20" id="news">
+                        <h2 class="title">latest News</h2>
+                        <div class="fx-s-bet gap-10">
+                            <div class="new gap-10 ">
+                                <img src="./images/news-01.png" alt="img">
+                                <p class="txt">Created SASS Section</p>
+                                <p class="desc">new SASS Examples & Tutorials</p>
+                            </div>
+                            <div class="code fx-c p-10"> 3 Days Ago </div>
+                        </div>
+                        <div class="fx-s-bet gap-10">
+                            <div class="new gap-10">
+                                <img src="./images/news-02.png" alt="img">
+                                <p class="txt">changed the design</p>
+                                <p class="desc">a brand new website design</p>
+                            </div>
+                            <div class="code fx-c p-10"> 5 Days Ago </div>
+                        </div>
+                        <div class="fx-s-bet gap-10">
+                            <div class="new gap-10 ">
+                                <img src="./images/news-03.png" alt="img">
+                                <p class="txt">Team increased</p>
+                                <p class="desc">3 Developers joined the team</p>
+                            </div>
+                            <div class="code fx-c p-10"> 7 Days Ago </div>
+                        </div>
+                        <div class="fx-s-bet gap-10">
+                            <div class="new gap-10 ">
+                                <img src="./images/news-04.png" alt="img">
+                                <p class="txt">added payment gateway</p>
+                                <p class="desc">many new payment gateways added</p>
+                            </div>
+                            <div class="code fx-c p-10"> 9 Days Ago </div>
+                        </div>
+
+                    </div>
+
+                    <!-- tasks -->
+                    <div class="box fx-cl p-20" id="tasks">
+                        <h2 class="title">latest tasks</h2>
+                        <div class="fx-s-bet">
+                            <div class="task ">
+                                <p class="txt">record one new video</p>
+                                <p class="desc">record python create Exe project</p>
+                            </div>
+                            <i class="fa-regular fa-trash-can"></i>
+                        </div>
+                        <div class="fx-s-bet">
+                            <div class="task ">
+                                <p class="txt">write article</p>
+                                <p class="desc">write low level VS high level languages</p>
+                            </div>
+                            <i class="fa-regular fa-trash-can"></i>
+                        </div>
+                        <div class="fx-s-bet ">
+                            <div class="task ">
+                                <p class="txt">finish project</p>
+                                <p class="desc">publish academy programming project</p>
+                            </div>
+                            <i class="fa-regular fa-trash-can"></i>
+                        </div>
+                        <div class="fx-s-bet finish">
+                            <div class="task ">
+                                <p class="txt">attend the meeting</p>
+                                <p class="desc">attend the project business analysis meeting</p>
+                            </div>
+                            <i class="fa-regular fa-trash-can"></i>
+                        </div>
+                        <div class="fx-s-bet">
+                            <div class="task ">
+                                <p class="txt">finish lesson</p>
+                                <p class="desc">finish teaching flex box</p>
+                            </div>
+                            <i class="fa-regular fa-trash-can"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- items -->
+                    <div class="box fx-cl p-20" id="items">
+                        <h2 class="title">top search items</h2>
+                        <div class="fx-s-bet ">
+                            <p class="desc">keyword</p>
+                            <p class="desc">search count</p>
+                        </div>
+                        <div class="fx-s-bet ">
+                            <p class="txt">programming</p>
+                            <span class="code">220</span>
+                        </div>
+                        <div class="fx-s-bet ">
+                            <p class="txt">JavaScript</p>
+                            <span class="code">180</span>
+                        </div>
+                        <div class="fx-s-bet ">
+                            <p class="txt">PHP</p>
+                            <span class="code">160</span>
+                        </div>
+                        <div class="fx-s-bet ">
+                            <p class="txt">Code</p>
+                            <span class="code">145</span>
+                        </div>
+                        <div class="fx-s-bet ">
+                            <p class="txt">design</p>
+                            <span class="code">110</span>
+                        </div>
+                        <div class="fx-s-bet ">
+                            <p class="txt">logic</p>
+                            <span class="code">95</span>
+                        </div>
+                    </div>
+
+                    <!-- uploads -->
+                    <div class="box fx-cl p-20" id="uploads">
+                        <h2 class="title">latest uploads</h2>
+                        <div class="fx-s-bet p-10">
+                            <div class="file fx-c gap-10">
+                                <img src="./images/pdf.svg" alt="">
+                                <div>
+                                    <p class="txt">my-file.pdf</p>
+                                    <p class="desc">Elzero</p>
+                                </div>
+                            </div>
+                            <div class="size code">2.9mb</div>
+                        </div>
+
+                        <div class="fx-s-bet p-10">
+                            <div class="file fx-c gap-10">
+                                <img src="./images/avi.svg" alt="" class="w-full">
+                                <div>
+                                    <p class="txt">my-video-file.avi</p>
+                                    <p class="desc">admin</p>
+                                </div>
+                            </div>
+                            <div class="size code">4.9mb</div>
+                        </div>
+
+                        <div class="fx-s-bet p-10">
+                            <div class="file fx-c gap-10">
+                                <img src="./images/psd.svg" alt="">
+                                <div>
+                                    <p class="txt">my-Psd-file.pdf</p>
+                                    <p class="desc">Osama</p>
+                                </div>
+                            </div>
+                            <div class="size code">4.5mb</div>
+                        </div>
+
+                        <div class="fx-s-bet p-10">
+                            <div class="file fx-c gap-10">
+                                <img src="./images/zip.svg" alt="">
+                                <div>
+                                    <p class="txt">my-zip-file.pdf</p>
+                                    <p class="desc">User</p>
+                                </div>
+                            </div>
+                            <div class="size code">8.9mb</div>
+                        </div>
+
+                        <div class="fx-s-bet p-10">
+                            <div class="file fx-c gap-10">
+                                <img src="./images/dll.svg" alt="">
+                                <div>
+                                    <p class="txt">my-Dll-file.pdf</p>
+                                    <p class="desc">admin</p>
+                                </div>
+                            </div>
+                            <div class="size code">8.9mb</div>
+                        </div>
+
+                        <div class="fx-s-bet p-10">
+                            <div class="file fx-c gap-10">
+                                <img src="./images/eps.svg" alt="">
+                                <div>
+                                    <p class="txt">my-Eps-File.pdf</p>
+                                    <p class="desc">Designer</p>
+                                </div>
+                            </div>
+                            <div class="size code">8.9mb</div>
+                        </div>
+                    </div>
+
+                    <!-- project Progress -->
+                    <div class="box fx-cl p-20 p-relative" id="progress">
+                        <h2 class="title">last project Progress</h2>
+                        <div class="d-fx gap-10 p-relative">
+                            <span class="b-r-half p-relative  done"></span>
+                            <p class="txt ">got the project</p>
+                        </div>
+                        <div class="d-fx gap-10 p-relative">
+                            <span class="b-r-half p-relative  done"></span>
+                            <p class="txt ">started the project</p>
+                        </div>
+                        <div class="d-fx gap-10 p-relative">
+                            <span class="b-r-half p-relative  done"></span>
+                            <p class="txt ">the project about to finish</p>
+                        </div>
+                        <div class="d-fx gap-10 p-relative">
+                            <span class="b-r-half p-relative  current"></span>
+                            <p class="txt ">test the project</p>
+                        </div>
+                        <div class="d-fx gap-10 p-relative">
+                            <span class="b-r-half p-relative"></span>
+                            <p class="txt ">finish the project & Get money</p>
+                        </div>
+                        <img src="./images/project.png" alt="" class="hide-mobile">
+                    </div>
+
+                    <!-- Reminders -->
+                    <div class="box fx-cl p-20 " id="reminders">
+                        <h2 class="title">Reminders</h2>
+                        <div class="d-fx gap-10 al-center">
+                            <span class="bg-dark-blue b-r-half"></span>
+                            <div>
+                                <p class="txt">check my tasks list</p>
+                                <p class="desc">28/09/2022 - 12:00am</p>
+                            </div>
+                        </div>
+                        <div class="d-fx gap-10 al-center">
+                            <span class="bg-dark-green b-r-half"></span>
+                            <div>
+                                <p class="txt">check my tasks list</p>
+                                <p class="desc">28/09/2022 - 12:00am</p>
+                            </div>
+                        </div>
+                        <div class="d-fx gap-10 al-center">
+                            <span class="bg-dark-orange b-r-half"></span>
+                            <div>
+                                <p class="txt">check my tasks list</p>
+                                <p class="desc">28/09/2022 - 12:00am</p>
+                            </div>
+                        </div>
+                        <div class="d-fx gap-10 al-center">
+                            <span class="bg-dark-red b-r-half"></span>
+                            <div>
+                                <p class="txt">check my tasks list</p>
+                                <p class="desc">28/09/2022 - 12:00am</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- post -->
+                    <div class="box fx-cl p-20  " id="post">
+                        <h2 class="title">latest post</h2>
+                        <div class="d-fx p-10 gap-10">
+                            <img src="./images/man.png" alt="">
+                            <div class="fx-cl js-center ">
+                                <p class="txt">kerolos lotfy</p>
+                                <p class="desc">about 3 hours Ago</p>
+                            </div>
+                        </div>
+                        <div class=" p-10">
+                            you can fool all of the people some of the time , and some of the people
+                            all of the Time, but you can't fool all of the people all of the time
+                        </div>
+
+                        <div class="fx-s-bet p-10 ">
+                            <p class="desc">
+                                <i class="fa-regular fa-heart"></i>
+                                <span class="desc">1.8K</span>
+                            </p>
+                            <p class="desc">
+                                <i class="fa-regular fa-comments"></i>
+                                <span class="desc">500</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- social -->
+                    <div class="box fx-cl p-20 " id="social">
+                        <h2 class="title">social media stats</h2>
+                        <div class="fx-s-bet  twitter b-r-10">
+                            <div class=" fx-c gap-10">
+                                <i class="fa-brands fa-twitter  fx-c"></i>
+                                <span class="txt">90K Followers</span>
+                            </div>
+                            <div class="btn ">follow</div>
+                        </div>
+                        <div class="fx-s-bet  face bg-light-blue b-r-10 ">
+                            <div class=" fx-c gap-10">
+                                <i class="fa-brands fa-facebook-f  fx-c bg-dark-blue "></i>
+                                <span class=" txt dark-blue">2M like</span>
+                            </div>
+                            <div class="btn bg-dark-blue txt">like</div>
+                        </div>
+                        <div class="fx-s-bet  youtube bg-light-red b-r-10">
+                            <div class=" fx-c gap-10  ">
+                                <i class="fa-brands fa-youtube  bg-dark-red  fx-c"></i>
+                                <span class="dark-red txt">1M subs</span>
+                            </div>
+                            <div class="btn bg-dark-red">subscribe</div>
+                        </div>
+                        <div class="fx-s-bet   linkedin b-r-10">
+                            <div class=" fx-c gap-10">
+                                <i class="fa-brands fa-linkedin  fx-c"></i>
+                                <span class="txt">70K Followers</span>
+                            </div>
+                            <div class="btn ">follow</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- projects -->
+                <div class=" projects p-20 b-r-10 w-full" >
+                    <h2 class="title">projects</h2>
+                    <div class="table">
+                        <table>
+                            <thead>
+                                <th>Name</th>
+                                <th>finish date</th>
+                                <th>client</th>
+                                <th>price</th>
+                                <th>team</th>
+                                <th>status</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ministry wikiipodia</td>
+                                    <td>20 Dec 2022</td>
+                                    <td>ministry</td>
+                                    <td>$5000</td>
+                                    <td>
+                                        <img src="./images/team-01.png" alt="">
+                                        <img src="./images/team-02.png" alt="">
+                                        <img src="./images/team-03.png" alt="">
+                                        <img src="./images/team-05.png" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="btn bg-dark-orange">pending</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>elzero shope</td>
+                                    <td>2 oct 2022</td>
+                                    <td>Elzero</td>
+                                    <td>$200</td>
+                                    <td>
+                                        <img src="./images/team-01.png" alt="">
+                                        <img src="./images/team-02.png" alt="">
+                                        <img src="./images/team-05.png" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="btn bg-dark-orange">pending</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ministry wekikiy</td>
+                                    <td>20 May 2022</td>
+                                    <td>Elzero</td>
+                                    <td>$200</td>
+                                    <td>
+                                        <img src="./images/team-03.png" alt="">
+                                        <img src="./images/team-05.png" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="btn bg-dark-blue">in progress</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ministry wekikiy</td>
+                                    <td>20 May 2022</td>
+                                    <td>Elzero</td>
+                                    <td>$200</td>
+                                    <td>
+                                        <img src="./images/team-01.png" alt="">
+                                        <img src="./images/team-02.png" alt="">
+                                        <img src="./images/team-03.png" alt="">
+                                        <img src="./images/team-05.png" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="btn bg-dark-orange">pending</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ministry wekikiy</td>
+                                    <td>20 May 2022</td>
+                                    <td>Elzero</td>
+                                    <td>$200</td>
+                                    <td>
+                                        <img src="./images/team-01.png" alt="">
+                                        <img src="./images/team-02.png" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="btn bg-dark-red">rejected</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ministry wekikiy</td>
+                                    <td>20 May 2022</td>
+                                    <td>Elzero</td>
+                                    <td>$200</td>
+                                    <td>
+                                        <img src="./images/team-01.png" alt="">
+                                        <img src="./images/team-02.png" alt="">
+                                        <img src="./images/team-05.png" alt="">
+                                    </td>
+                                    <td>
+                                        <span class="btn bg-dark-green">complated</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        
+                        </table>
+                    </div>
+                </div>
+
+            </section>
+        </article>
+    </main>
+
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

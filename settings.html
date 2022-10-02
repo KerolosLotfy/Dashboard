@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <!-- framework style -->
+    <link rel="stylesheet" href="./css/frameWork.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+        <aside class="p-10">
+            <h2 class="logo p-relative"><a href="">kerolos</a></h2>
+            <!-- nav -->
+            <ul class="fx-cl">
+                <li class=" active" data-display="dashboard">
+                    <a class=" p-10" href="./index.html">
+                        <i class="fa-regular fa-chart-bar"></i>
+                        <span class="txt-captial">Dasborad</span>
+                    </a>
+                </li>
+                <li data-display="settings">
+                    <a class=" p-10" href="./settings.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="txt-captial">settings</span>
+                    </a>
+                </li>
+                <li data-display="profile">
+                    <a class=" p-10" href="./profile.html">
+                        <i class="fa-regular fa-user"></i>
+                        <span class="txt-captial">profile</span>
+                    </a>
+                </li>
+                <li data-display="projects">
+                    <a class=" p-10" href="./projects.html">
+                        <i class="fa-solid fa-share-nodes"></i>
+                        <span class="txt-captial">projects</span>
+                    </a>
+                </li>
+                <li data-display="courses">
+                    <a class=" p-10" href="./courses.html">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span class="txt-captial">courses</span>
+                    </a>
+                </li>
+                <li data-display="friends">
+                    <a class=" p-10" href="./friends.html">
+                        <i class="fa-regular fa-circle-user"></i>
+                        <span class="txt-captial">friends</span>
+                    </a>
+                </li>
+                <li data-display="files">
+                    <a class=" p-10" href="./files.html">
+                        <i class="fa-regular fa-file"></i>
+                        <span class="txt-captial">files</span>
+                    </a>
+                </li>
+                <li data-display="plans">
+                    <a class=" p-10" href="./plans.html">
+                        <i class="fa-regular fa-credit-card"></i>
+                        <span class="txt-captial">plans</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- article -->
+        <article>
+            <!-- header -->
+            <header class="fx-s-bet">
+                <div class="search fx-c p-relative">
+                    <label for="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                    <input class="p-10 b-r-10" type="search" name="search" id="search" placeholder="Type A Keyword">
+                </div>
+
+                <div class="user fx-c">
+                    <div class="theme fx-c f p-relative">
+                        <i class="fa-solid fa-moon moon"></i>
+                        <i class="fa-solid fa-sun sun"></i>
+                    </div>
+                    <i class="fa-regular fa-bell p-relative"></i>
+                    <img src="./images/man.png" alt="">
+                </div>
+            </header>
+
+            <!-- settings section -->
+            <section id="settings" class="w-full p-20 ">
+                <h1 class="sec-title">settings</h1>
+                <div class="container g-c-3  gap-10">
+                    <div class="box p-20">
+                        <h3 class="title">site control</h3>
+                        <p class="desc">control the website if there is maintenance</p>
+                        <div class="control fx-s-bet block-mobile   ">
+                            <div class="">
+                                <p class="txt mt-10">website control</p>
+                                <p class="desc mt-10">open/close website and type the reason</p>
+                            </div>
+                            <div class="toggle on mt-10 ">
+                                <i class="fa-solid fa-circle-xmark x"></i>
+                                <i class="fa-solid fa-circle-check check"></i>
+                            </div>
+                        </div>
+                        <form action="" >
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Close Message Content" class="w-full mt-10 p-10 b-r-10 "></textarea>
+                        </form>
+                    </div>
+
+                    <div class="box p-20">
+                        <h3 class="title">general info</h3>
+                        <p class="desc">general information about your account</p>
+                        <form action="">
+                            <label for="f-name" class="mb-10 mt-10 desc">First Name</label>
+                            <input type="text" name="first Name" id="f-name" placeholder="First Name" class="w-full p-10 b-r-10">
+                            <label for="l-name" class="mb-10 mt-10 desc">Last Name</label>
+                            <input type="text" name="last Name" id="l-name" placeholder="Last Name" class="w-full p-10 b-r-10">
+                            <div class="d-fx fx-wrap al-center">
+                                <label for="email" class="mb-10 mt-10 desc w-full"> Email</label>
+                                <input type="email" name="email" id="email" placeholder="o@nn.sa" class=" p-10 b-r-10 c-gray " >
+                                <span class=" dark-blue  p-10 m-auto">Change</span>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="box p-20 security">
+                        <h3 class="title">security info</h3>
+                        <p class="desc">security information about your account</p>
+                        
+                        <div class="pass fx-s-bet mt-10 block-mobile ">
+                            <div>
+                                <p class="txt">password</p>
+                                <p class="desc">last Change on <span class="change-date">25/10/2021</span></p>
+                            </div>
+                            <div>
+                                <a class="btn bg-dark-blue mt-10 " href="#">change</a>
+                            </div>
+                        </div>
+
+                        <div class="pass fx-s-bet mt-10 block-mobile">
+                            <div>
+                                <p class="txt">two-Factor authentication</p>
+                                <p class="desc">enable/Disable the feature</p>
+                            </div>
+                            <div class="toggle on mt-10 ">
+                                <i class="fa-solid fa-circle-xmark x"></i>
+                                <i class="fa-solid fa-circle-check check"></i>
+                            </div>
+                        </div>
+
+
+                        <div class="pass fx-s-bet mt-10 block-mobile ">
+                            <div>
+                                <p class="txt">Devices</p>
+                                <p class="desc">check the login Devices list</p>
+                            </div>
+                            <div class="code mt-10  ">Devices</div>
+                        </div>
+                        
+
+                    </div>
+
+                    <div class="box p-20 social">
+                        <h3 class="title">social info</h3>
+                        <p class="desc">social medua information</p>
+                    
+                        <div class="pass d-fx al-center mt-10  w-full b-r-10 ">
+                            <span class="p-10"><i class="fa-brands fa-twitter"></i></span>
+                            <p class="desc p-10">twitter username</p>
+                        </div>
+                        <div class="pass d-fx al-center mt-10  w-full b-r-10 ">
+                            <span class="p-10"><i class="fa-brands fa-facebook-f"></i></span>
+                            <p class="desc p-10">facebook username</p>
+                        </div>
+                        <div class="pass d-fx al-center mt-10  w-full b-r-10 ">
+                            <span class="p-10"><i class="fa-brands fa-linkedin-in"></i></span>
+                            <p class="desc p-10">linkedin username</p>
+                        </div>
+                        <div class="pass d-fx al-center mt-10  w-full b-r-10 ">
+                            <span class="p-10"><i class="fa-brands fa-youtube"></i></span>
+                            <p class="desc p-10">youtube username</p>
+                        </div>
+                    </div>
+
+                    <div class="box p-20 ">
+                        <h3 class="title">widgets control</h3>
+                        <p class="desc">show/Hide widgets</p>
+                    
+                        <ul class="mt-10">
+                            <li class="d-fx al-center">
+                                <input type="checkbox" name="widgets" id="draft">
+                                <label for="draft">quick draft</label>
+                            </li>
+                            <li class="d-fx al-center">
+                                <input type="checkbox" name="widgets" id="targets">
+                                <label for="targets">yearly targets</label>
+                            </li>
+                            <li class="d-fx al-center">
+                                <input type="checkbox" name="widgets" id="statistics">
+                                <label for="statistics">tickets statistics</label>
+                            </li>
+                            <li class="d-fx al-center">
+                                <input type="checkbox" name="widgets" id="news">
+                                <label for="news" >latest news</label>
+                            </li>
+                            <li class="d-fx al-center">
+                                <input type="checkbox" name="widgets" id="tasks">
+                                <label for="tasks" >latest tasks</label>
+                            </li>
+                            <li class="d-fx al-center">
+                                <input type="checkbox" name="widgets" id="items">
+                                <label for="items">top search items</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="box p-20 ">
+                        <h3 class="title">backup manager </h3>
+                        <p class="desc"> control backup time and location</p>
+                    
+                        <ul class="mt-10">
+                            <li class="d-fx al-center">
+                                <input type="radio" name="time" id="daily-time">
+                                <label for="daily-time">Daily</label>
+                            </li>
+                            <li class="d-fx al-center">
+                                <input type="radio" name="time" id="weekly-time">
+                                <label for="weekly-time">Weekly</label>
+                            </li>
+                            <li class="d-fx al-center">
+                                <input type="radio" name="time" id="monthly-time">
+                                <label for="monthly-time">Monthly</label>
+                            </li>
+                        </ul>
+
+                        <div class="location mt-10 fx-c gap-10 block-mobile">
+                            <div class="fx-cl  al-center js-center b-r-10 m-auto mb-10">
+                                <p class="fa-solid fa-server "></p>
+                                <p class="txt mt-10">Megaman</p>
+                            </div>
+                            <div class="fx-cl al-center js-center b-r-10 m-auto mb-10 active">
+                                <p class="fa-solid fa-server "></p>
+                                <p class="txt mt-10">Zero</p>
+                            </div>
+                            <div class="fx-cl  al-center js-center b-r-10 m-auto mb-10">
+                                <p class="fa-solid fa-server "></p>
+                                <p class="txt mt-10">Sigma</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

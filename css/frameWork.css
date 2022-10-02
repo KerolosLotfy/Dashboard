@@ -1,0 +1,223 @@
+/* padding */
+.p-10 {
+    padding: 10px;
+}
+.p-20 {
+    padding: 20px;
+}
+
+/* margin */
+.m-10 {
+    margin: 10px;
+}
+.m-20 {
+    margin: 20px;
+}
+.m-30 {
+    margin: 30px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.m-zero {
+    margin: 0;
+}
+.m-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* border radius*/
+.b-r-half {
+    border-radius: 50%;
+}.b-r-10 {
+    border-radius: 10px;
+}
+.b-r-20 {
+    border-radius: 20px;
+}
+
+
+/* width & height */
+.w-full {
+    width: 100%;
+}
+.h-full {
+    height: 100%;
+}
+
+
+/* flex  */
+.fx-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.al-center {
+    align-items: center;
+}
+.js-center {
+    justify-content: center;
+}
+.d-fx {
+    display: flex;
+}
+.fx-cl {
+    display: flex;
+    flex-direction: column;
+}
+.fx-s-bet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fx-wrap {
+    flex-wrap: wrap;
+}
+
+
+/* gap */
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-40 {
+    gap: 40px;
+}
+
+
+/* grid */
+.d-grid {
+    display: grid;
+}
+.g-c-5 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.g-c-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px,1fr));
+}
+
+
+/* postion */
+.p-relative {
+    position: relative;
+}
+/*  bg colors */
+.bg-dark-blue {
+    background-color: #0075ff;
+}
+.bg-dark-orange {
+    background-color: #f59e0b;
+}
+.bg-dark-green {
+    background-color: #22c55e;
+}
+.bg-dark-red {
+    background-color: #f44336;
+}
+.bg-light-blue {
+    background-color: #cce3ff;
+}
+.bg-light-orange {
+    background-color: #fdecce;
+}
+.bg-light-green {
+    background-color: #d3f3df;
+}
+.bg-light-red {
+    background-color: #ffcccc;
+}
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-gray {
+    background-color: #757575;
+}
+
+/*  text colors */
+.dark-blue {
+    color: #0075ff;
+}
+.dark-orange {
+    color: #f59e0b;
+}
+.dark-green {
+    color: #22c55e;
+}
+.dark-red {
+    color: #f44336;
+}
+
+.c-white {
+    color: #fff;
+}
+.c-gray {
+    color: #757575;
+}
+
+
+
+
+.toggle {
+    background: #eee;
+    height: auto;
+    width: 60px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #757575;
+    position: relative;
+    transition: .2s;
+    padding: 5px;
+    font-size: 18px;
+}
+    @media (max-width:768px) {
+        .toggle {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+
+.toggle > .check{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+}
+
+.toggle.on > .x{
+    opacity: 0;
+}
+.toggle.on {
+    background-color: #0075ff;
+}
+.toggle.on > .check{
+    opacity: 1;
+    color: #fff;
+    right: 3px;
+    left: auto;
+}
+
+@media (max-width:768px) {
+    .hide-mobile {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .block-mobile {
+        display: block;
+        text-align: center;
+    }
+}
